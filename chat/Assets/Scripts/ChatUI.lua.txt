@@ -1,0 +1,23 @@
+-- TT
+-- require 'FairyGUI'
+contentList = {}
+
+function start()
+    mainView = panel.ui:GetChild("send_btn").onClick:Add(onClickSend)
+    textInput = panel.ui:GetChild("input").asTextInput
+
+    list = panel.ui:GetChild("list").asList
+    list.numItems = #contentList
+    list.itemRenderer = renderListItem
+end
+
+function onClickSend()
+    contentList[#contentList + 1] = textInput.text
+    list.numItems = #contentList
+    list.scrollPane:ScrollBottom()
+end
+
+function renderListItem(index, obj)
+    component = obj.asCom
+    component:GetChild("content").asTextField.text = contentList[index + 1]
+end

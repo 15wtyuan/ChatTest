@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,300">
+  <displayList>
+    <text id="n0_bivh" name="content" xy="24,114" size="10,66" fontSize="50" text=""/>
+    <text id="n1_bivh" name="name" xy="24,25" size="10,42" fontSize="30" text=""/>
+  </displayList>
+</component>

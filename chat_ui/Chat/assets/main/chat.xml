@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1080,1920">
+  <displayList>
+    <list id="n0_bivh" name="list" xy="0,200" pivot="0,1" size="1080,1520" overflow="scroll" lineGap="10" defaultItem="ui://or0q2h61bivh1" vAlign="bottom">
+      <relation target="" sidePair="width-width,height-height"/>
+    </list>
+    <text id="n1_bivh" name="input" xy="0,1745" pivot="0.5,0.5" size="1080,100" fontSize="50" vAlign="middle" autoSize="none" text="" input="true"/>
+    <graph id="n2_bivh" name="send_btn" xy="895,1745" size="152,100" type="rect" fillColor="#ff00ff00"/>
+    <text id="n3_bivh" name="n3" xy="937,1775" pivot="0.5,0.5" size="64,50" fontSize="30" autoSize="none" text="发送">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+</component>

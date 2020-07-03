@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="or0q2h61">
+  <resources>
+    <component id="w2ie0" name="chat.xml" path="/" exported="true"/>
+    <component id="bivh1" name="chat_item.xml" path="/"/>
+    <font id="bivh2" name="SOURCEHANSANSCN-BOLD.OTF" path="/" renderMode="" samplePointSize="16"/>
+    <font id="bivh3" name="SOURCEHANSANSCN-MEDIUM.OTF" path="/" renderMode="" samplePointSize="16"/>
+    <font id="bivh4" name="SOURCEHANSANSCN-REGULAR.OTF" path="/" renderMode="" samplePointSize="16"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>
