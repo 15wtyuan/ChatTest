@@ -1,0 +1,11 @@
+F:\ChromeDownload\Test\ChatServer\bin\Debug\netcoreapp3.1\ChatServer.exe
+F:\ChromeDownload\Test\ChatServer\bin\Debug\netcoreapp3.1\ChatServer.deps.json
+F:\ChromeDownload\Test\ChatServer\bin\Debug\netcoreapp3.1\ChatServer.runtimeconfig.json
+F:\ChromeDownload\Test\ChatServer\bin\Debug\netcoreapp3.1\ChatServer.runtimeconfig.dev.json
+F:\ChromeDownload\Test\ChatServer\bin\Debug\netcoreapp3.1\ChatServer.dll
+F:\ChromeDownload\Test\ChatServer\bin\Debug\netcoreapp3.1\ChatServer.pdb
+F:\ChromeDownload\Test\ChatServer\obj\Debug\netcoreapp3.1\ChatServer.csprojAssemblyReference.cache
+F:\ChromeDownload\Test\ChatServer\obj\Debug\netcoreapp3.1\ChatServer.AssemblyInfoInputs.cache
+F:\ChromeDownload\Test\ChatServer\obj\Debug\netcoreapp3.1\ChatServer.AssemblyInfo.cs
+F:\ChromeDownload\Test\ChatServer\obj\Debug\netcoreapp3.1\ChatServer.dll
+F:\ChromeDownload\Test\ChatServer\obj\Debug\netcoreapp3.1\ChatServer.pdb

@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 526296480}
   - component: {fileID: 526296479}
   - component: {fileID: 526296481}
+  - component: {fileID: 526296482}
   m_Layer: 5
   m_Name: UIPanel
   m_TagString: Untagged
@@ -280,6 +281,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   luaScript: {fileID: 4900000, guid: c5951f542bb5c1544b3e1d8997fd57f8, type: 3}
+--- !u!114 &526296482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526296478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4edb0dd8d5adc4409a32b3992199071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &583138724
 GameObject:
   m_ObjectHideFlags: 0
