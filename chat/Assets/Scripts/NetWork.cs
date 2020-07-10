@@ -16,7 +16,6 @@ namespace Network
     public class Message
     {
         public MessageType type;
-        public ushort id;
         public byte[] data;
     }
 
@@ -67,8 +66,6 @@ namespace Network
                 Message msg = new Message();
 
                 msg.type = MessageType.DataReceived;
-                msg.id = 0;
-
                 msg.data = new byte[len];
                 Array.Copy(data, start, msg.data, 0, len);
 

@@ -1,5 +1,6 @@
 using System;
 using System.Net;
+using System.Collections.Generic;
 
 namespace Chat
 {
@@ -9,11 +10,21 @@ namespace Chat
 
         private const int receiveBufferSize = 128 * 1024;
 
+        private Dictionary<int, MsgBaseCtrl> handlerDict = new Dictionary<int, MsgBaseCtrl>();
+
         public ChatServer()
         {
             server = new Server(10, receiveBufferSize);
             server.Init();
             server.SetListener(this);
+
+            AddHandler(new NameMsgCtrl());
+            AddHandler(new MsgCtrl());
+        }
+
+        public void AddHandler(MsgBaseCtrl msgBaseCtrl)
+        {
+            handlerDict[msgBaseCtrl.MsgID] = msgBaseCtrl;
         }
 
         public void Start(string ip, int port)
@@ -41,7 +52,17 @@ namespace Chat
 
         void Server.IListener.OnReceiveData(AsyncUserToken token, byte[] buff)
         {
-            Console.WriteLine($"{System.Text.Encoding.Default.GetString(buff)}");
+            // Console.WriteLine($"{System.Text.Encoding.Default.GetString(buff)}");
+            int start = 0;
+            int id = PacketTools.ReadInt32(buff, ref start);
+
+            byte[] data = new byte[buff.Length - 4];
+            Array.Copy(buff, 4, data, 0, buff.Length - 4);
+
+            if (handlerDict.ContainsKey(id))
+            {
+                handlerDict[id].OnReceiveData(server, token, data);
+            }
         }
 
         void Server.IListener.stopedDel()

@@ -11,7 +11,7 @@ using System.Threading;
 namespace Chat
 {
     #region server端
-    class Server
+    public class Server
     {
         public interface IListener
         {
@@ -37,7 +37,7 @@ namespace Chat
         BufferManager m_bufferManager;
         const int opsToAlloc = 2;
         Socket listenSocket;            //监听Socket  
-        public SocketEventPool m_pool;
+        SocketEventPool m_pool;
         int m_clientCount;              //连接的客户端数量  
         Semaphore m_maxNumberAcceptedClients;
 
@@ -219,7 +219,7 @@ namespace Chat
                 SocketAsyncEventArgs readEventArgs = m_pool.Pop();
                 AsyncUserToken userToken = (AsyncUserToken)readEventArgs.UserToken;
 
-                userToken.usernamr = "Mtt";
+                userToken.username = "Mtt";
                 userToken.Socket = e.AcceptSocket;
                 userToken.ConnectTime = DateTime.Now;
                 userToken.Remote = e.AcceptSocket.RemoteEndPoint;
@@ -516,7 +516,7 @@ namespace Chat
     #endregion
 
     #region AsyncUserToken
-    class AsyncUserToken
+    public class AsyncUserToken
     {
         /// <summary>  
         /// 客户端IP地址  
@@ -542,7 +542,7 @@ namespace Chat
         /// 数据缓存区  
         /// </summary>  
         public List<byte> Buffer { get; set; }
-        public string usernamr { get; set; }
+        public string username { get; set; }
 
         public AsyncUserToken()
         {
